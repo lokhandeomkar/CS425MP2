@@ -382,6 +382,13 @@ public class DistMemList implements Runnable{
 		failedMembers.clear();
 	}
 
+	/*
+	Classes Used: DatagramPacket and DatagramSocket
+	Opens a DatagramSocket on listeningport, keeps receiving DatagramPackets
+	drops a packet deliberately to simulate lossy network with a loss rate
+	and adds received packets to the queue.
+	*/
+	
 	public void receiver(){
 		DatagramPacket receivePacket;
 		DatagramSocket incomingsocket = null;
