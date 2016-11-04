@@ -224,6 +224,10 @@ public class DistMemList implements Runnable{
 		outgoingSocket.close();
 	}
 
+	/*
+	this function puts self and the machines in self memlist in a string so that it can be gossipped.
+	*/
+	
 	public String get_list(String currtimestring)
 	{
 		String entireList = "";
@@ -245,7 +249,7 @@ public class DistMemList implements Runnable{
 		}
 		return entireList;
 	}
-
+	
 	public void list_merge(String inlist)
 	{
 		// This function merges the lists
@@ -319,7 +323,7 @@ public class DistMemList implements Runnable{
 			}
 		}
 	}
-
+	
 	public void update_selfentry()
 	{
 		Date currDate = new Date();
