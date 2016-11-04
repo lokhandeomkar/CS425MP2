@@ -1,3 +1,8 @@
+/*
+Marks this thread as either a daemon thread or a user thread. 
+The Java Virtual Machine exits when the only threads running are all daemon threads.
+*/
+
 public class StartMemListDaemon{
 	public static void main(String[] args)
 	{
