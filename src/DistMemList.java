@@ -1,3 +1,11 @@
+/*
+Receiver:
+Classes Used: DatagramPacket and DatagramSocket
+Opens a DatagramSocket on listeningport, keeps receiving DatagramPackets
+DatagramPacket has the destination IP and port.
+Ignores packets deliberately to simulate lossy network with a specified 
+loss rate and adds received packets to the queue.
+*/
 import java.io.*;
 import java.net.*;
 import java.sql.Timestamp;
@@ -382,12 +390,7 @@ public class DistMemList implements Runnable{
 		failedMembers.clear();
 	}
 
-	/*
-	Classes Used: DatagramPacket and DatagramSocket
-	Opens a DatagramSocket on listeningport, keeps receiving DatagramPackets
-	drops a packet deliberately to simulate lossy network with a loss rate
-	and adds received packets to the queue.
-	*/
+	
 	
 	public void receiver(){
 		DatagramPacket receivePacket;
