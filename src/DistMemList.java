@@ -2,7 +2,7 @@
 Receiver:
 Classes Used: DatagramPacket and DatagramSocket
 Opens a DatagramSocket on listeningport, keeps receiving DatagramPackets
-DatagramPacket has the destination IP and port.
+DatagramPacket has the destination IP and port at the sender.
 Ignores packets deliberately to simulate lossy network with a specified 
 loss rate and adds received packets to the queue.
 */
