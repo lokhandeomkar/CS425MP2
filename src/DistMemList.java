@@ -1,4 +1,6 @@
 /*
+Two separate threads, sender and receiver. 
+
 Receiver:
 Classes Used: DatagramPacket and DatagramSocket
 Opens a DatagramSocket on listeningport, keeps receiving DatagramPackets
